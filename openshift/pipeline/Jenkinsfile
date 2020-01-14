@@ -1,7 +1,0 @@
-
-node('nodejs') {
-  stage 'build'
-  openshiftBuild(buildConfig: 'game-ex', showBuildLogs: 'true')
-  stage 'deploy'
-  openshiftDeploy(deploymentConfig: 'game-ex')
-}
