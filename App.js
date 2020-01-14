@@ -1,5 +1,3 @@
-import React from "react";
-import { Route, Switch } from "react-router-dom";
 import AvatarSelect from "./pages/AvatarSelect";
 import LessonSelect from "./pages/LessonSelect";
 import Security1 from "./pages/Security1";
@@ -10,6 +8,13 @@ import Security5 from "./pages/Security5";
 import Quiz1 from "./pages/Quiz1";
 import Quiz2 from "./pages/Quiz2";
 import Quiz3 from "./pages/Quiz3";
+
+const http = require('http')'
+
+const hostname = '127.0.0.1'
+const port= 3000;
+
+
 
 export default function App() {
   return (
@@ -26,4 +31,4 @@ export default function App() {
       <Route path="/Security5" component={Security5} />
     </Switch>
   );
-}
+  }
